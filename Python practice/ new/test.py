@@ -1,0 +1,6 @@
+n=input()
+x=set(map(int, input().split()))
+print(x)
+new_x=list(set(x))
+new_x.sort()
+print(new_x)
