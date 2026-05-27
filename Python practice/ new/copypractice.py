@@ -43,13 +43,16 @@ e[0][0]=99
 
 # deepcopy 
 
-f=copy.deepcopy(d)
-print("d","f",d,f)
+# f=copy.deepcopy(d)
+# print("d","f",d,f)
 d[0].append(12)
-print("d","f",d,f)
+# print("d","f",d,f)
 d[0][2]=88
-print("d","f",d,f)
+# print("d","f",d,f)
 
 # d f [[99, 2, 199], [3, 4]] [[99, 2, 199], [3, 4]]
 # d f [[99, 2, 199, 12], [3, 4]] [[99, 2, 199], [3, 4]]
 # d f [[99, 2, 88, 12], [3, 4]] [[99, 2, 199], [3, 4]]
+
+print(d,d[0].count(99))
+print(d[0].index(99))
